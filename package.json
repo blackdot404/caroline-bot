@@ -1,0 +1,30 @@
+{
+  "name": "caroline-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackdot404/caroline-bot.git"
+  },
+  "keywords": [],
+  "author": "blackdot404",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackdot404/caroline-bot/issues"
+  },
+  "homepage": "https://github.com/blackdot404/caroline-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "pino": "^6.11.2",
+    "pino-pretty": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
