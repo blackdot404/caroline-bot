@@ -2,7 +2,7 @@ const logger = require('../logger');
 module.exports = {
   name: 'ban',
   description: 'Esse comando é para banir um usuário do servidor. Você pode colocar uma razão para está banindo um usuário do servidor.',
-  async execute(message, args) {
+  async execute(client, message, args, Discord) {
     if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(`você não possui a permissão necessaria. :no_entry_sign:`);
 
     const member = message.mentions.users.first();

@@ -3,7 +3,7 @@ const ms = require('ms');
 module.exports = {
   name: 'mute',
   description: 'Esse comando é para mutar um usuário do servidor.',
-  async execute(message, args) {
+  async execute(client, message, args, Discord) {
     if(!message.member.hasPermission('MUTE_MEMBERS')) return message.reply(`você não possui a permissão necessaria. :no_entry_sign:`);
     const target = message.mentions.users.first();
 
@@ -23,7 +23,7 @@ module.exports = {
       }
 
       //caso seja setado um valor que não é um número.
-      if(isNaN(args[1])) return message.reply(`se for determinar um tempo para o usuário que seja um número válido!`);
+      // if(isNaN(args[1])) return message.reply(`se for determinar um tempo para o usuário que seja um número válido!`);
 
         //caso seja setado um tempo para o mute.
         memberTarget.roles.remove(mainRole.id);
