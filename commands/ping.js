@@ -3,7 +3,7 @@ const config = require('../config.json');
 module.exports = {
   name: 'ping',
   description: 'Esse é o comando de ping.',
-  async execute(client, message, args, Discord) {
+  async execute(message, args, cmd, client, Discord) {
     let m = await message.channel.send({
       "embed": {
         "description": ":comet: Pinging...",

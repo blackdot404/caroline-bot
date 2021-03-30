@@ -1,8 +1,9 @@
 const logger = require('../logger');
 module.exports = {
   name: 'clear',
+  cooldown: 10,
   description: 'Limpa as mensagens de acordo com a quantidade estipulada.',
-  async execute(client, message, args, Discord) {
+  async execute(message, args, cmd, client, Discord) {
     if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`você não possui a permissão necessaria. :no_entry_sign:`); //valida se o usuario que executou tem as devidas permissões
     if(!args[0]) return message.reply(`você deve digitar a quantidade de messagens que deseja excluir.` );// valida se foi digitado uma quantidade
     if(isNaN(args[0])) return message.reply(`por favor digite um número válido.` ); // valida se foi digitado um número

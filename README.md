@@ -24,6 +24,8 @@ PREFIX: c!
 
 [x] mute/unmute - Esse comando é para mutar um usuário do servidor;
 
+[x] music bot - em processo de implementação do comando de musica do bot;
+
 [] roles - determina cargos para cada usuário abaixo do cargo do bot;
 
 [] chat private - gerenciamento de chat privado.
@@ -33,11 +35,11 @@ PREFIX: c!
 
 - ESTRUTURA DO CODIGO:
 
-[x] Event Handler - no momento não foi possivel implementar o evento handler pelo motivo de que o bot não está reconhecendo args
-após o prefixo.
-OBS: pretendo tentar novamente futuramente para que o codigo fique mais limpo e acelere o desenvolvimento do bot.
+[x] Event Handler - Implementado e testado;
 
-[x] Commmand Handler - Implementado e testado.
+[x] Commmand Handler - Implementado e testado;
+
+[] Connect DB - conexão de banco de dados em implementação.
 
 
 Desenvolvido por blackdot404.

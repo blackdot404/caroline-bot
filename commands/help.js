@@ -2,8 +2,9 @@ const config = require('../config.json');
 const { MessageEmbed } = require('discord.js');
 module.exports = {
   name: 'help',
+  aliases: ['h','ajuda'],
   description: 'Comandos utilizado no bot',
-  async execute(client, message, args, Discord){
+  async execute(message, args, cmd, client, Discord){
     const embed = new MessageEmbed()
       .setTitle(':clipboard: - Lista de comandos')
       .setColor(config.embedcolor)

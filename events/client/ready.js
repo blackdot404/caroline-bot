@@ -1,9 +1,9 @@
 const memberCounter = require('../../counters/member-counter');
 const config = require('../../config.json');
 const logger = require('../../logger');
-module.exports = (client, message, args, Discord) =>{
+module.exports = (client, message, cmd, args, Discord) =>{
 // Informações que será apresentado no momento em que o bot iniciar.
-  memberCounter(client, Discord);
+  //memberCounter(client, Discord);
   let activities = [
     `Utilize ${config.prefix}help para obter ajuda`,
     `${client.guilds.cache.size} servidores!`,

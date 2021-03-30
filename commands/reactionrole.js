@@ -2,7 +2,7 @@ const logger = require('../logger');
 module.exports = {
   name: 'reactionrole',
   description: 'Seta um cargo quando o usuário concorda com as regras.',
-  async execute(client, message, args, Discord) {
+  async execute(message, args, cmd, client, Discord) {
     const channel = '824702840562778142';
     const newbie = await message.guild.roles.cache.find(role => role.name === 'Newbie');
 

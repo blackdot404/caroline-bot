@@ -4,7 +4,7 @@ module.exports = async (client, Discord) => {
   setInterval(() => {
     const memberCount = guild.memberCount;
     const channel = guild.channels.cache.get('826486222401568780');
-    channel.setName(`Membros: ${memberCount.toLocaleString()}`);
+    channel.setName(`👥Membros: ${memberCount.toLocaleString()}`);
     logger.info(`Atualizando contagem de membros.`);
   }, 300000);
 }
