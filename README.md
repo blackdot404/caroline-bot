@@ -4,6 +4,12 @@ PREFIX: c!
 
 - EVENTOS:
 
+[x] welcome - mensagem de boas vindas;
+
+[x] reaction role - atribuir cargo de membro assim que o usuario novo concordar com as regras;
+
+[x] member count - contagem de membros do servidor.
+
 *mais funções em breve.*
 
 - COMANDOS:
@@ -20,13 +26,14 @@ PREFIX: c!
 
 [] roles - determina cargos para cada usuário abaixo do cargo do bot;
 
-[] chat private - gerenciamento de chat privado;
+[] chat private - gerenciamento de chat privado.
+
 *mais comandos em breve*
 
 
 - ESTRUTURA DO CODIGO:
 
-[fail] Event Handler - no momento não foi possivel implementar o evento handler pelo motivo de que o bot não está reconhecendo args
+[x] Event Handler - no momento não foi possivel implementar o evento handler pelo motivo de que o bot não está reconhecendo args
 após o prefixo.
 OBS: pretendo tentar novamente futuramente para que o codigo fique mais limpo e acelere o desenvolvimento do bot.
 
