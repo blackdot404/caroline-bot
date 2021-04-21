@@ -5,7 +5,7 @@ module.exports = async (client, Discord, guildMember) => {
   let welcomeChannel = await guildMember.guild.channels.cache.get('824700294360989737');
   let welcomeServer = await client.guilds.cache.get('277453110220161024');
   let textRoles = await client.channels.cache.get('824702840562778142');
-  let guildImage = await client.guild.iconURL.cache.get('277453110220161024');
+  let userAvatar = await guildMember.user.avatarURL();
 
   // guildMember.roles.add(welcomeRole);
 
@@ -14,10 +14,10 @@ module.exports = async (client, Discord, guildMember) => {
     .setTitle(`:mega: Bem vindo(a) :mega:`)
     .setDescription(`**${guildMember.user}**, bem-vindo(a) ao servidor **${welcomeServer.name}**! 
       \nAtualmente estamos com **${welcomeServer.memberCount} membros**.
-      \nNão esqueça de ler as <#${textRoles.id}>`)
+      \nNão esqueça de ler as <#${textRoles.id}>\n`)
     .setFooter(config.name, config.imgbot)
     .setTimestamp()
-    .setThumbnail(guildImage);
+    .setThumbnail(userAvatar);
 
   welcomeChannel.send(embed);
 }
